@@ -1,0 +1,7 @@
+{
+  "name": "AgroNoMi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
