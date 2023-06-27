@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/soja"></ion-back-button>
+    </ion-buttons>
+    <ion-title>AgroNoMi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-img src="/assets/img/2.jpg" alt="plantação de soja"></ion-img>
+    
+    <h3>Método de estimativa para produção de soja</h3>
+    <p>
+      1ª etapa - Contar quantas Plantas existem em 10 metros uma área qualquer da aplantação, em seguida
+      medir a distância média entre uma planta e outra.
+
+      Cálculo 1 : 10.000 m²(Um Hectare) / X (Distância Média em CM) = Y (Metros lineares por Hectare)
+
+      Cálculo 2: X (Quantidade de plantas em 10M) * Y (Metros lineares por Hectare) = Z (Quantidade de plantas por hectare)
+
+      Inputs necessários:
+      Quantidade de plantas em 10 metros lineares;
+      Distância Média entre uma planta e Outra em M;
+    </p>
+    <p>
+      2ª etapa - Coletar 10 plantas e contar o número de grãos em seguida dividir por 10 para encontrar a média de grãos por planta, em seguida informar o peso de mil grãos em gramas, com essas informações é possível identificar o peso dos grãos por planta. 
+
+      Cálculo 1: X (Quantidade de grãos nas 10 plantas) / 10 = Y (Número de grãos por planta)
+
+      Cálculo 2 : X (Peso de 1 grão em Gramas) x 1000 = Y (Estimativa do peso de mil grãos)
+
+      Cálculo 3 : (Y (Número de grãos por planta) * X (peso de mil grãos) / 1000) = Z (Peso de grãos por planta)
+
+      Inputs necessários:
+      Quantidade de grãos nas 10 plantas coletadas;
+      Peso de um grão;
+    </p>
+    <p>
+      3ª etapa: Com as etapas anteriores realizadas, é possível estimar a quantidade de sacas(60 KG) por hectare.
+
+      Cálculo 1: (X (Peso dos grãos por planta) * Y (Número de plantas por hectare) / 60.000) = Z (Quantidade de sacas por hectare) 
+    </p>
+  </div>
+</ion-content>

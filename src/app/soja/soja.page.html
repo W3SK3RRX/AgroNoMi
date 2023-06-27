@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button default-href="/home"></ion-back-button>
+      </ion-buttons>
+      <ion-title>AgroNoMi</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <h4>Cálculo de estimativa de produção</h4>
+    <br>
+    <ion-input [(ngModel)]="qtd_plantas_10"  type="number" label="Quantidade de plantas em 10 metros lineares" label-placement="floating" fill="outline" placeholder="Digite aqui"></ion-input>
+    <br>
+    <ion-input [(ngModel)]="dist_med_planta" type="number" label="Distância Média entre uma planta e Outra em metros" label-placement="floating" fill="outline" placeholder="Digite aqui"></ion-input>
+    <br>
+    <ion-input [(ngModel)]="qtd_med_grao" type="number" label="Quantidade média de grãos nas 10 plantas coletadas" label-placement="floating" fill="outline" placeholder="Digite aqui"></ion-input>
+    <br>
+    <ion-input [(ngModel)]="peso_1_grao" type="number" label="Peso de um grão" label-placement="floating" fill="outline" placeholder="Digite aqui"></ion-input>
+    <br>
+    <ion-button expand="block" (click)="calcularEstimativaProducao()">Calcular</ion-button>
+    <br>
+    
+    <label style="color: #26581fe5; font-weight: bolder;">Resultado em sacas/hectare:</label>
+    <ion-input [disabled]="true" class="resultado" value="{{resultado}}" style="color: #26581fe5;"></ion-input>
+    
+    <br>
+    <br>
+    <p style="color: #0064fae5; font-weight: bolder;">Quer saber como esse cálculo é realizado?</p>
+    <br>
+    <ion-button ion-button routerLink="/calculo">Saiba mais</ion-button>
+  </div>
+  
+</ion-content>

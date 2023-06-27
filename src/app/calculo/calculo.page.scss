@@ -1,0 +1,36 @@
+#container {
+    text-align: center;
+    position:relative;
+    left: 0;
+    right: 0;
+    top: 0%;
+    padding: 10px;
+
+}
+
+ion-content{
+    --background: rgb(231,231,231);
+  
+  }
+
+ion-toolbar{
+    --background: rgba(38,88,31,1);
+}
+
+ion-img{
+    
+    width: 100%;
+    border-radius: 10px;
+}
+
+h3{
+    color: rgba(38,88,31,1);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+p{
+    text-align: justify;
+    color: black;
+}
+
+

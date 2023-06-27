@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'soja',
+    loadChildren: () => import('./soja/soja.module').then( m => m.SojaPageModule)
+  },
+  {
+    path: 'calculo',
+    loadChildren: () => import('./calculo/calculo.module').then( m => m.CalculoPageModule)
+  },
 ];
 
 @NgModule({
